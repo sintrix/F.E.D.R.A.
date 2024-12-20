@@ -13,6 +13,21 @@ FEDRA is a lightweight tool designed to streamline the transcription of audio fi
 
 ---
 
+## Device Options: CPU enabled by default.
+- **CPU**: Use if no GPU is available or if GPU is not desired.
+- **CUDA**: For Nvidia GPUs supporting CUDA (requires PyTorch with CUDA).
+- **MPS**: For Apple Silicon devices (M1/M2 chips) using Metal Performance Shaders.
+- **OpenCL**: If supported by hardware and libraries.
+- **DirectML**: For Windows environments using DirectML (via ONNX Runtime or PyTorch DirectML backend).
+
+**Example**:
+```bash
+import torch
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+```
+
+---
+
 ## Installation
 
 ### 1. Clone the Repository
