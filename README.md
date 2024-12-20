@@ -1,5 +1,5 @@
 # FEDRA: Flexible, Easy, and Dynamic Recorder Automation
-
+![Alt Text](FEDRA.png)
 ## Overview
 FEDRA is a lightweight tool designed to streamline the transcription of audio files using OpenAI Whisper. With integrated logging, a web server, and organized Markdown output, this program ensures a seamless workflow for researchers and professionals alike.
 
